@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Trophy, Users, Lightbulb, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
-import hawkLogo from "@/assets/hawk-logo.png";
+import rohawkLogo from "@/assets/rohawklogo.png";
 import { DecorativeBlobs, DecorativeRings, DecorativeCorners, DecorativeLines } from "@/components/DecorativeElements";
 import InstagramEmbed from "@/components/InstagramEmbed";
 import SocialLinks from "@/components/SocialLinks";
@@ -50,8 +50,8 @@ const Home = () => {
               <Sparkles size={16} className="text-gold" />
             </div>
           <img 
-            src={hawkLogo} 
-            alt="Hawks Logo" 
+            src={rohawkLogo} 
+            alt="Rohawklings Logo" 
             className="h-32 w-32 mx-auto mb-6 animate-fade-in"
           />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">

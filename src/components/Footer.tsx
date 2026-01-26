@@ -1,6 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import hawkLogo from "@/assets/hawk-logo.png";
+import rohawkLogo from "@/assets/rohawklogo.png";
 import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <img src={hawkLogo} alt="Hawk Logo" className="h-16 w-16 mb-4" />
+            <img src={rohawkLogo} alt="Rohawklings Logo" className="h-16 w-16 mb-4" />
             <h3 className="text-xl font-bold mb-2">FTC Rohawklings</h3>
             <p className="text-primary-foreground/80 text-sm text-center md:text-left mb-4">
               Building the future through robotics

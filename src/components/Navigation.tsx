@@ -1,7 +1,7 @@
 import { NavLink } from "./NavLink";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import hawkLogo from "@/assets/hawk-logo.png";
+import rohawkLogo from "@/assets/rohawklogo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center gap-3">
-            <img src={hawkLogo} alt="Hawk Logo" className="h-12 w-12" />
+            <img src={rohawkLogo} alt="Rohawklings Logo" className="h-12 w-12" />
             <span className="text-xl font-bold text-foreground">FTC Rohawklings</span>
           </NavLink>
 
