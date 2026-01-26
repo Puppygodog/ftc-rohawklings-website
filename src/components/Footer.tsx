@@ -14,7 +14,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="flex flex-col items-center md:items-start">
-            <img src={rohawkLogo} alt="Rohawklings Logo" className="h-16 w-16 mb-4" />
+            <div className="mb-4 inline-block p-2 rounded-full bg-gold/30 backdrop-blur-sm" style={{ boxShadow: '0 0 20px rgba(245, 158, 11, 0.6), 0 0 40px rgba(245, 158, 11, 0.4)' }}>
+              <img src={rohawkLogo} alt="Rohawklings Logo" className="h-16 w-16" />
+            </div>
             <h3 className="text-xl font-bold mb-2">FTC Rohawklings</h3>
             <p className="text-primary-foreground/80 text-sm text-center md:text-left mb-4">
               Building the future through robotics

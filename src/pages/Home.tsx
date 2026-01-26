@@ -44,16 +44,24 @@ const Home = () => {
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 text-sm mb-6 animate-fade-in">
-              <Sparkles size={16} className="text-gold" />
-              <span>Teams 24661 (Purple) & 32863 (Gold)</span>
-              <Sparkles size={16} className="text-gold" />
+          {/* Teams Banner - Above Logo */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 text-sm mb-6 animate-fade-in" style={{ boxShadow: '0 0 15px rgba(245, 158, 11, 0.5), 0 0 30px rgba(245, 158, 11, 0.3)' }}>
+            <Sparkles size={16} className="text-gold" />
+            <span>Teams 24661 (Purple) & 32863 (Gold)</span>
+            <Sparkles size={16} className="text-gold" />
+          </div>
+          
+          {/* Logo - Centered above title */}
+          <div className="flex justify-center mb-6 animate-fade-in">
+            <div className="inline-block p-3 rounded-full bg-gold/30 backdrop-blur-sm" style={{ boxShadow: '0 0 25px rgba(245, 158, 11, 0.6), 0 0 50px rgba(245, 158, 11, 0.4), 0 0 75px rgba(245, 158, 11, 0.2)' }}>
+              <img 
+                src={rohawkLogo} 
+                alt="Rohawklings Logo" 
+                className="h-32 w-32"
+              />
             </div>
-          <img 
-            src={rohawkLogo} 
-            alt="Rohawklings Logo" 
-            className="h-32 w-32 mx-auto mb-6 animate-fade-in"
-          />
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
             FTC Rohawklings
           </h1>
