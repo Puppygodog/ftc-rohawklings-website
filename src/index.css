@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 262 30% 98%;
+    --foreground: 262 70% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 262 70% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 262 70% 12%;
+
+    --primary: 262 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-light: 262 75% 65%;
+    --primary-dark: 262 85% 38%;
+
+    --secondary: 262 40% 95%;
+    --secondary-foreground: 262 70% 12%;
+
+    --gold: 43 96% 56%;
+    --gold-light: 48 96% 65%;
+    --gold-dark: 38 92% 46%;
+
+    --muted: 262 25% 92%;
+    --muted-foreground: 262 30% 45%;
+
+    --accent: 262 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 262 25% 88%;
+    --input: 262 20% 88%;
+    --ring: 262 80% 50%;
+
+    --radius: 0.75rem;
+    
+    /* Decorative colors */
+    --surface-purple: 262 60% 97%;
+    --surface-gold: 43 80% 96%;
+    --dot-color: 262 40% 85%;
+  }
+
+  .dark {
+    --background: 262 45% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 262 40% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 262 45% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262 75% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-light: 262 70% 70%;
+    --primary-dark: 262 80% 50%;
+
+    --secondary: 262 35% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --gold: 48 96% 65%;
+    --gold-light: 52 96% 72%;
+    --gold-dark: 43 96% 56%;
+
+    --muted: 262 30% 18%;
+    --muted-foreground: 262 25% 65%;
+
+    --accent: 262 75% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 262 30% 20%;
+    --input: 262 30% 20%;
+    --ring: 262 75% 60%;
+    
+    --surface-purple: 262 50% 12%;
+    --surface-gold: 43 40% 12%;
+    --dot-color: 262 30% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .shadow-elegant {
+    box-shadow: 0 4px 24px -4px rgba(91, 33, 182, 0.12), 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-card {
+    box-shadow: 0 2px 16px -2px rgba(91, 33, 182, 0.08);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: 0 8px 32px -4px rgba(91, 33, 182, 0.15);
+  }
+  
+  .shadow-gold {
+    box-shadow: 0 4px 20px -4px rgba(245, 158, 11, 0.25);
+  }
+  
+  .border-accent-gradient {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--gold)) 100%) 1;
+  }
+  
+  /* Decorative background patterns */
+  .bg-dots {
+    background-image: radial-gradient(hsl(var(--dot-color)) 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+  }
+  
+  .bg-dots-dense {
+    background-image: radial-gradient(hsl(var(--primary) / 0.15) 1px, transparent 1px);
+    background-size: 12px 12px;
+  }
+  
+  .bg-grid {
+    background-image: 
+      linear-gradient(hsl(var(--dot-color) / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--dot-color) / 0.4) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  .bg-grid-dense {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .bg-surface-purple {
+    background-color: hsl(var(--surface-purple));
+  }
+  
+  .bg-surface-gold {
+    background-color: hsl(var(--surface-gold));
+  }
+  
+  .bg-surface-mixed {
+    background: linear-gradient(135deg, hsl(var(--surface-purple)) 0%, hsl(var(--surface-gold) / 0.5) 50%, hsl(var(--surface-purple)) 100%);
+  }
+  
+  .bg-colorful {
+    background: 
+      hsl(262 85% 96%);
+    position: relative;
+  }
+  
+  .bg-colorful::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 15% 25%, hsl(262 80% 45% / 0.25) 0%, transparent 50%),
+      radial-gradient(circle at 85% 75%, hsl(43 96% 55% / 0.25) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, hsl(262 75% 60% / 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .bg-colorful-intense {
+    background: 
+      hsl(262 80% 94%);
+    position: relative;
+  }
+  
+  .bg-colorful-intense::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 10% 20%, hsl(262 80% 50% / 0.35) 0%, transparent 45%),
+      radial-gradient(circle at 90% 80%, hsl(43 96% 56% / 0.30) 0%, transparent 45%),
+      radial-gradient(circle at 50% 10%, hsl(262 75% 65% / 0.20) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, hsl(43 96% 60% / 0.20) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  /* Decorative shapes */
+  .decorative-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .decorative-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid hsl(var(--primary) / 0.2);
+    pointer-events: none;
+  }
+  
+  .decorative-ring-gold {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid hsl(var(--gold) / 0.2);
+    pointer-events: none;
+  }
+  
+  .decorative-ring-dashed {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed hsl(var(--primary) / 0.15);
+    pointer-events: none;
+  }
+}
+
+/* Animation keyframes for decorative elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-25px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+.animate-bounce-soft {
+  animation: bounce-soft 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 25s linear infinite;
+}
+
+/* Fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
