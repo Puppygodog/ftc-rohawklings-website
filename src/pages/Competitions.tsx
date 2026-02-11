@@ -16,31 +16,50 @@ const Competitions = () => {
       title: "NYC Qualifier 8",
       award: "1st Place Ranking, Sustain Award #2, Alliance 1 Captain",
       year: "2026 - Jan 17",
+      team: "24661",
       description: "Won 1st Place Ranking, Sustain Award #2, and Alliance 1 Captain at NYC Qualifier 8 on January 17, 2026.",
     },
     {
       title: "NYC Qualifier 6",
       award: "Think Award",
       year: "2026 - Jan 3",
+      team: "32863",
       description: "Won the Think Award at NYC Qualifier 6 on January 3, 2026.",
+    },
+    {
+      title: "NYC Qualifier 8",
+      award: "Judge's Choice Award",
+      year: "2025 - Feb 1",
+      team: "24661",
+      description: "Won the Judge's Choice Award at NYC Qualifier 8 on February 1, 2025.",
     },
     {
       title: "NYC Qualifier 8",
       award: "Rank 3",
       year: "2024",
+      team: "24661",
       description: "Finished Rank 3 out of 21 Teams in NYC Qualifier 8, demonstrating exceptional performance and teamwork.",
     },
     {
       title: "NYC Superqualifier 1",
       award: "Rank 18",
       year: "2024",
+      team: "24661",
       description: "Finished Rank 18 out of 32 Teams in NYC Superqualifier 1. Top 14% of teams in the qualifiers go to superqualifiers.",
     },
     {
       title: "MakerFaire Coney Island",
       award: "Participation",
       year: "2024",
+      team: "24661",
       description: "Participated in MakerFaire Coney Island, displaying our 2024 Centerstage season robot to the community.",
+    },
+    {
+      title: "NYC Qualifier 2",
+      award: "Judge's Choice Award",
+      year: "2023 - Dec 9",
+      team: "24661",
+      description: "Won the Judge's Choice Award at NYC Qualifier 2 on December 9, 2023.",
     },
   ];
 
@@ -64,7 +83,7 @@ const Competitions = () => {
               <div className="h-1 w-12 bg-primary rounded-full"></div>
               <h2 className="text-3xl font-bold text-foreground">Upcoming Events</h2>
             </div>
-            <div className="grid grid-cols-1 gap-6 max-w-2xl">
+            <div className="grid grid-cols-1 gap-6">
               {upcomingEvents.map((event, index) => (
                 <Card 
                   key={index}
@@ -111,6 +130,9 @@ const Competitions = () => {
                       <CardTitle className="text-base text-foreground mb-2">{achievement.title}</CardTitle>
                       <p className="text-gold-dark font-semibold text-sm">{achievement.award}</p>
                       <p className="text-xs text-muted-foreground mt-1">{achievement.year}</p>
+                      {achievement.team && (
+                        <p className="text-xs text-primary font-medium mt-1">Team {achievement.team}</p>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent>

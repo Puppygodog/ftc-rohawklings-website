@@ -6,6 +6,7 @@ import rohawkLogo from "@/assets/rohawklogo.png";
 import { DecorativeBlobs, DecorativeRings, DecorativeCorners, DecorativeLines } from "@/components/DecorativeElements";
 import InstagramEmbed from "@/components/InstagramEmbed";
 import SocialLinks from "@/components/SocialLinks";
+import SponsorRow from "@/components/SponsorRow";
 
 const Home = () => {
   return (
@@ -139,6 +140,19 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="bg-colorful relative overflow-hidden py-8">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+            Our Sponsors
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Thank you to our generous supporters
+          </p>
+        </div>
+        <SponsorRow />
       </section>
 
       {/* Social Section */}
