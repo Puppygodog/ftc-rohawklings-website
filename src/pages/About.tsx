@@ -91,7 +91,7 @@ const About = () => {
                     <div className="text-sm text-muted-foreground">NYC Qualifier 8</div>
                   </div>
                   <div className="text-center p-4 rounded-lg bg-primary/10 border border-primary/20">
-                    <div className="text-3xl font-bold text-primary mb-1">Rank 3</div>
+                    <div className="text-3xl font-bold text-primary mb-1">3rd Place</div>
                     <div className="text-sm text-muted-foreground">NYC Qualifier 8</div>
                   </div>
                 </div>
