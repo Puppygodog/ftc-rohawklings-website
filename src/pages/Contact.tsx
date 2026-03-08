@@ -157,7 +157,7 @@ const Contact = () => {
 
               <Card className="bg-gold/20 border border-gold/30">
                 <CardContent className="py-6 text-center">
-                  <h3 className="text-xl font-bold mb-2 text-foreground">Interested?</h3>
+                  <h3 className="text-xl font-bold mb-2 text-foreground">Want to Join?</h3>
                   <p className="text-foreground/90 mb-4">
                     Our robotics team is open to all Hunter College High School students interested in robotics. Join us for hands-on learning, teamwork, and competition!
                   </p>

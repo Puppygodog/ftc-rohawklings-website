@@ -13,7 +13,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section 
-        className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20"
+        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(91, 33, 182, 0.95), rgba(91, 33, 182, 0.85), rgba(245, 158, 11, 0.75)), url(${heroBg})`,
           backgroundSize: 'cover',
@@ -46,7 +46,7 @@ const Home = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           {/* Teams Banner - Above Logo */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 text-sm mb-8 animate-fade-in" style={{ boxShadow: '0 0 15px rgba(245, 158, 11, 0.5), 0 0 30px rgba(245, 158, 11, 0.3)' }}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 text-sm mb-6 animate-fade-in" style={{ boxShadow: '0 0 15px rgba(245, 158, 11, 0.5), 0 0 30px rgba(245, 158, 11, 0.3)' }}>
             <Sparkles size={16} className="text-gold" />
             <span>Teams 24661 (Purple) & 32863 (Gold)</span>
             <Sparkles size={16} className="text-gold" />
@@ -54,11 +54,11 @@ const Home = () => {
           
           {/* Logo - Centered above title */}
           <div className="flex justify-center mb-6 animate-fade-in">
-            <div className="inline-block p-4 rounded-full bg-gold/30 backdrop-blur-sm" style={{ boxShadow: '0 0 25px rgba(245, 158, 11, 0.6), 0 0 50px rgba(245, 158, 11, 0.4), 0 0 75px rgba(245, 158, 11, 0.2)' }}>
+            <div className="inline-block p-3 rounded-full bg-gold/30 backdrop-blur-sm" style={{ boxShadow: '0 0 25px rgba(245, 158, 11, 0.6), 0 0 50px rgba(245, 158, 11, 0.4), 0 0 75px rgba(245, 158, 11, 0.2)' }}>
               <img 
                 src={rohawkLogo} 
                 alt="Rohawklings Logo" 
-                className="h-40 w-40 md:h-48 md:w-48"
+                className="h-32 w-32"
               />
             </div>
           </div>
@@ -69,14 +69,10 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto animate-fade-in">
             Hunter College High School
           </p>
-          <p className="text-lg md:text-xl text-white/80 mb-4 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto animate-fade-in">
             <strong className="text-gold">Innovation</strong>, <strong className="text-gold">teamwork</strong>, and <strong className="text-gold">excellence</strong> in robotics competition
           </p>
-          <p className="text-base md:text-lg text-white/85 mb-8 max-w-3xl mx-auto animate-fade-in">
-            Our team is dedicated to exploring the past and changing the future through innovation and technology. 
-            With our program, we hope to give our members the skills needed to open new paths.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-8">
             <Button asChild size="lg" className="bg-gold hover:bg-gold-dark text-foreground font-semibold shadow-gold">
               <Link to="/about">
                 Learn More <ArrowRight className="ml-2" size={20} />
@@ -86,7 +82,7 @@ const Home = () => {
               <Link to="/donate">Support Us</Link>
             </Button>
           </div>
-          <SocialLinks className="justify-center animate-fade-in mt-6" />
+          <SocialLinks className="justify-center animate-fade-in" />
         </div>
       </section>
 

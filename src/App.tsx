@@ -10,7 +10,6 @@ import About from "./pages/About";
 import Captains from "./pages/Captains";
 import WhatWeDo from "./pages/WhatWeDo";
 import Competitions from "./pages/Competitions";
-import Outreach from "./pages/Outreach";
 import Gallery from "./pages/Gallery";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
@@ -31,7 +30,6 @@ const App = () => (
             <Route path="about" element={<About />} />
             <Route path="captains" element={<Captains />} />
             <Route path="what-we-do" element={<WhatWeDo />} />
-            <Route path="outreach" element={<Outreach />} />
             <Route path="competitions" element={<Competitions />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="donate" element={<Donate />} />

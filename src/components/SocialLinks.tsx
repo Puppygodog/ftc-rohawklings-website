@@ -16,7 +16,7 @@ const SocialLinks = ({ variant = 'default', className = '' }: SocialLinksProps) 
     },
     {
       name: 'YouTube',
-      url: 'https://m.youtube.com/@rohawklings/',
+      url: '#',
       icon: Youtube,
       color: 'hover:text-red-500',
       bgColor: 'hover:bg-red-500/10',
