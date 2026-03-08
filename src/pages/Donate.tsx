@@ -22,15 +22,9 @@ const Donate = () => {
             <Card className="bg-gold/40 border border-gold/50">
               <CardContent className="py-8 text-center">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Thank You to Our Sponsors</h3>
-                <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-                  <div className="text-foreground/90 font-semibold">Think Academy</div>
-                  <div className="text-foreground/90 font-semibold">Russian School of Mathematics</div>
-                  <div className="text-foreground/90 font-semibold">Rocket Club</div>
-                  <div className="text-foreground/90 font-semibold">Hunter College High School PTA</div>
-                  <div className="text-foreground/90 font-semibold">Yeh Family</div>
-                  <div className="text-foreground/90 font-semibold">Bikel Family</div>
-                  <div className="text-foreground/90 font-semibold">Zhang Family</div>
-                </div>
+                <p className="text-foreground/90 font-semibold text-sm md:text-base">
+                  Think Academy | Russian School of Mathematics | Rocket Club | Hunter College High School PTA | Yeh Family | Bikel Family | Zhang Family
+                </p>
               </CardContent>
             </Card>
           </div>

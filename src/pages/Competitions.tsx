@@ -1,46 +1,64 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Trophy, Calendar, MapPin, Award } from "lucide-react";
+import { Calendar, MapPin, Award } from "lucide-react";
 
 const Competitions = () => {
   const upcomingEvents = [
     {
-      title: "NYC Superqualifier 1",
-      date: "February 28, 2026",
-      location: "John Dewey High School",
-      description: "Our next major competition where we'll compete against top teams from the qualifiers.",
+      title: "NYC Champs",
+      date: "March 8, 2026",
+      location: "Francis Lewis High School",
+      description: "NYC Championship event where we'll compete against the top teams from across the city.",
     },
   ];
 
   const pastAchievements = [
     {
+      title: "NYC Superqualifier 1",
+      award: "24661 qualified to NYC Champs; 32863 – 2nd Place Connect Award",
+      year: "2026 - Feb 28",
+      description: "At NYC Superqualifier 1, Team 24661 qualified to the NYC Championship and Team 32863 earned the 2nd Place Connect Award.",
+    },
+    {
       title: "NYC Qualifier 8",
       award: "1st Place Ranking, Sustain Award #2, Alliance 1 Captain",
       year: "2026 - Jan 17",
+      team: "24661",
       description: "Won 1st Place Ranking, Sustain Award #2, and Alliance 1 Captain at NYC Qualifier 8 on January 17, 2026.",
     },
     {
       title: "NYC Qualifier 6",
       award: "Think Award",
       year: "2026 - Jan 3",
+      team: "32863",
       description: "Won the Think Award at NYC Qualifier 6 on January 3, 2026.",
+    },
+    {
+      title: "NYC Qualifier 8",
+      award: "Judge's Choice Award",
+      year: "2025 - Feb 1",
+      team: "24661",
+      description: "Won the Judge's Choice Award at NYC Qualifier 8 on February 1, 2025.",
     },
     {
       title: "NYC Qualifier 8",
       award: "Rank 3",
       year: "2024",
+      team: "24661",
       description: "Finished Rank 3 out of 21 Teams in NYC Qualifier 8, demonstrating exceptional performance and teamwork.",
-    },
-    {
-      title: "NYC Superqualifier 1",
-      award: "Rank 18",
-      year: "2024",
-      description: "Finished Rank 18 out of 32 Teams in NYC Superqualifier 1. Top 14% of teams in the qualifiers go to superqualifiers.",
     },
     {
       title: "MakerFaire Coney Island",
       award: "Participation",
       year: "2024",
+      team: "24661",
       description: "Participated in MakerFaire Coney Island, displaying our 2024 Centerstage season robot to the community.",
+    },
+    {
+      title: "NYC Qualifier 2",
+      award: "Judge's Choice Award",
+      year: "2023 - Dec 9",
+      team: "24661",
+      description: "Won the Judge's Choice Award at NYC Qualifier 2 on December 9, 2023.",
     },
   ];
 
@@ -111,6 +129,9 @@ const Competitions = () => {
                       <CardTitle className="text-base text-foreground mb-2">{achievement.title}</CardTitle>
                       <p className="text-gold-dark font-semibold text-sm">{achievement.award}</p>
                       <p className="text-xs text-muted-foreground mt-1">{achievement.year}</p>
+                      {achievement.team && (
+                        <p className="text-xs text-primary font-medium mt-1">Team {achievement.team}</p>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent>

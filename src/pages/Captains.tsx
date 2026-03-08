@@ -11,7 +11,7 @@ const Captains = () => {
   const captains = [
     {
       name: "Charlie Zhang",
-      role: "Team Captain",
+      role: "Co-Captain",
       image: charlieImg,
       description: "Hello! My name is Charlie Zhang and I am one of the co-captains for the 2025 to 2026 FTC Season. I'm looking forward to spreading my love of STEM and teaching my teammates the fundamentals of robotics this year, and also expanding my own knowledge! Outside of robotics, I enjoy playing golf, tennis, badminton, and guitar! Looking forward to the season ahead!",
     },
