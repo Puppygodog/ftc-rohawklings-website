@@ -23,7 +23,7 @@ const Donate = () => {
               <CardContent className="py-8 text-center">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Thank You to Our Sponsors</h3>
                 <p className="text-foreground/90 font-semibold text-sm md:text-base">
-                  Think Academy | Russian School of Mathematics | Rocket Club | Hunter College High School PTA | Yeh Family | Bikel Family | Zhang Family
+                  Think Academy | Russian School of Mathematics | Rocket Club | Hunter College High School PTA | Yeh Family | Bikel Family | Zhang Family | Pecoraro Family
                 </p>
               </CardContent>
             </Card>
