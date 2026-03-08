@@ -29,7 +29,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-gold">Quick Links</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/80">
               <Link to="/about" className="hover:text-gold transition-colors">About Us</Link>
-              <Link to="/leadership" className="hover:text-gold transition-colors">Leadership</Link>
+              <Link to="/captains" className="hover:text-gold transition-colors">Leadership</Link>
               <Link to="/what-we-do" className="hover:text-gold transition-colors">What We Do</Link>
               <Link to="/competitions" className="hover:text-gold transition-colors">Competitions</Link>
             </div>
@@ -40,6 +40,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-gold">Explore</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/80">
               <Link to="/gallery" className="hover:text-gold transition-colors">Gallery</Link>
+              <Link to="/outreach" className="hover:text-gold transition-colors">Outreach</Link>
               <Link to="/donate" className="hover:text-gold transition-colors">Donate</Link>
               <Link to="/contact" className="hover:text-gold transition-colors">Contact</Link>
             </div>
