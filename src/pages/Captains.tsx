@@ -16,7 +16,7 @@ const Captains = () => {
       description: "Hello! My name is Charlie Zhang and I am one of the co-captains for the 2025 to 2026 FTC Season. I'm looking forward to spreading my love of STEM and teaching my teammates the fundamentals of robotics this year, and also expanding my own knowledge! Outside of robotics, I enjoy playing golf, tennis, badminton, and guitar! Looking forward to the season ahead!",
     },
     {
-      name: "Catherine Zhu",
+      name: "Catherine Du",
       role: "Co-Captain",
       image: catherineImg,
       description: "Hi! My name is Catherine Zhu and I am one of the co-captains for Rohawklings Gold. I help to guide the decision making process and serve as a part of the mentorship that keeps Rohawklings alive, promoting robotics education by supporting the programming-oriented side of 32863 in its rookie year. I love working with our dedicated team, including managing outreach and working closely with my fellow leads. Outside of robotics, I am obsessed with earth and environmental sciences and believe that a better world is fought for with unity and cohesion.",
