@@ -48,7 +48,7 @@ const Home = () => {
           {/* Teams Banner - Above Logo */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-white/90 text-sm mb-8 animate-fade-in" style={{ boxShadow: '0 0 15px rgba(245, 158, 11, 0.5), 0 0 30px rgba(245, 158, 11, 0.3)' }}>
             <Sparkles size={16} className="text-gold" />
-            <span>Teams 24661 (Purple) & 32863 (Gold)</span>
+            <span>Team 24661</span>
             <Sparkles size={16} className="text-gold" />
           </div>
           
