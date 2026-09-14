@@ -3,7 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import ScrollToTop from "./components/ScrollToTop";
+import MaintenanceOverlay from "./MaintenanceOverlay";
+
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -23,23 +26,37 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+
       <BrowserRouter>
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="captains" element={<Captains />} />
-            <Route path="what-we-do" element={<WhatWeDo />} />
-            <Route path="outreach" element={<Outreach />} />
-            <Route path="competitions" element={<Competitions />} />
-            <Route path="gallery" element={<Gallery />} />
-            <Route path="donate" element={<Donate />} />
-            <Route path="contact" element={<Contact />} />
-          </Route>
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+
+        <MaintenanceOverlay>
+          <Routes>
+            {/* Main website routes */}
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+
+              <Route path="about" element={<About />} />
+
+              <Route path="captains" element={<Captains />} />
+
+              <Route path="what-we-do" element={<WhatWeDo />} />
+
+              <Route path="outreach" element={<Outreach />} />
+
+              <Route path="competitions" element={<Competitions />} />
+
+              <Route path="gallery" element={<Gallery />} />
+
+              <Route path="donate" element={<Donate />} />
+
+              <Route path="contact" element={<Contact />} />
+            </Route>
+
+            {/* Catch-all route for pages that don't exist */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </MaintenanceOverlay>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
