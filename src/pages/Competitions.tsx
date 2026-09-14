@@ -4,10 +4,10 @@ import { Calendar, MapPin, Award } from "lucide-react";
 const Competitions = () => {
   const upcomingEvents = [
     {
-      title: "NYC Champs",
-      date: "March 8, 2026",
-      location: "Francis Lewis High School",
-      description: "NYC Championship event where we'll compete against the top teams from across the city.",
+      title: "Date TBA",
+      date: " ",
+      location: " ",
+      description: " ",
     },
   ];
 
