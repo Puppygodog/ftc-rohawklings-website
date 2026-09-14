@@ -44,14 +44,7 @@ const Competitions = () => {
       award: "Rank 3",
       year: "2024",
       team: "24661",
-      description: "Finished Rank 3 out of 21 Teams in NYC Qualifier 8, demonstrating exceptional performance and teamwork.",
-    },
-    {
-      title: "MakerFaire Coney Island",
-      award: "Participation",
-      year: "2024",
-      team: "24661",
-      description: "Participated in MakerFaire Coney Island, displaying our 2024 Centerstage season robot to the community.",
+      description: "Finished Rank 3 out of 21 Teams in NYC Qualifier 8.",
     },
     {
       title: "NYC Qualifier 2",
@@ -62,6 +55,16 @@ const Competitions = () => {
     },
   ];
 
+  const pastTournaments = [
+      {
+        title: "MakerFaire Coney Island",
+        award: "Participation",
+        year: "2024",
+        team: "24661",
+        description: "Participated in MakerFaire Coney Island, displaying our 2024 Centerstage season robot to the community.",
+      },
+    ];
+  
   return (
     <div className="min-h-screen py-24 bg-colorful-intense relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
