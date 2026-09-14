@@ -4,9 +4,9 @@ import { Calendar, MapPin, Award } from "lucide-react";
 const Competitions = () => {
   const upcomingEvents = [
     {
-      title: "Date TBA",
-      date: " ",
-      location: " ",
+      title: "No upcoming events for now!",
+      date: "Date TBA",
+      location: "Location TBA",
       description: " ",
     },
   ];
