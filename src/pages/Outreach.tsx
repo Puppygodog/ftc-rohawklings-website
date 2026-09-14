@@ -74,9 +74,7 @@ const Outreach = () => {
                 <p>
                   We are <strong className="text-gold-dark">AMBASSADORS for FIRST</strong> with the{" "}
                   <strong className="text-gold-dark">Russian School of Mathematics</strong> to teach their summer
-                  robotics enrichment program, which we helped initiate. We are exposing young minds to robotics by
-                  introducing them to <strong className="text-gold-dark">First Lego League</strong>, growing the
-                  engineering community from its roots.
+                  robotics enrichment program, which we helped initiate. 
                 </p>
                 <p>
                   We met with <strong className="text-gold-dark">Iron Phoenix #22942</strong>, who graciously donated{" "}
