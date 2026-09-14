@@ -78,8 +78,8 @@ const MaintenanceOverlay = ({
                 color: "#d1d5db",
               }}
             >
-              We're currently performing some maintenance and updates.
-              You can continue to the site below.
+              We're currently performing some maintenance and updates. Because of this, some content may be missing, outdated, or just inaccurate.
+              If you wish, you can continue to the site below.
             </p>
 
             <button
