@@ -1,65 +1,125 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
-import ScrollToTop from "./components/ScrollToTop";
-import MaintenanceOverlay from "./MaintenanceOverlay";
+interface MaintenanceOverlayProps {
+  children: React.ReactNode;
+}
 
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Captains from "./pages/Captains";
-import WhatWeDo from "./pages/WhatWeDo";
-import Competitions from "./pages/Competitions";
-import Outreach from "./pages/Outreach";
-import Gallery from "./pages/Gallery";
-import Donate from "./pages/Donate";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+const MaintenanceOverlay = ({
+  children,
+}: MaintenanceOverlayProps) => {
+  const [showMaintenance, setShowMaintenance] = useState(true);
 
-const queryClient = new QueryClient();
+  const continueToSite = () => {
+    setShowMaintenance(false);
+  };
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
+  return (
+    <>
+      {/* Your entire existing website stays underneath */}
+      {children}
 
-      <BrowserRouter>
-        <ScrollToTop />
+      {/* Maintenance screen */}
+      {showMaintenance && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: "100vw",
+            height: "100vh",
+            zIndex: 2147483647,
 
-        <MaintenanceOverlay>
-          <Routes>
-            {/* Main website routes */}
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
 
-              <Route path="about" element={<About />} />
+            padding: "24px",
+            backgroundColor: "#111827",
+            color: "#ffffff",
 
-              <Route path="captains" element={<Captains />} />
+            textAlign: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              maxWidth: "600px",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "64px",
+                marginBottom: "20px",
+              }}
+            >
+              🚧
+            </div>
 
-              <Route path="what-we-do" element={<WhatWeDo />} />
+            <h1
+              style={{
+                margin: "0 0 16px",
+                fontFamily: "Arial, sans-serif",
+                fontSize: "42px",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                color: "#ffffff",
+              }}
+            >
+              Site Under Maintenance
+            </h1>
 
-              <Route path="outreach" element={<Outreach />} />
+            <p
+              style={{
+                margin: "0 auto 30px",
+                maxWidth: "520px",
+                fontFamily: "Arial, sans-serif",
+                fontSize: "18px",
+                lineHeight: 1.6,
+                color: "#d1d5db",
+              }}
+            >
+              We're currently performing some maintenance and updates.
+              You can continue to the site below.
+            </p>
 
-              <Route path="competitions" element={<Competitions />} />
+            <button
+              type="button"
+              onClick={continueToSite}
+              style={{
+                border: "none",
+                borderRadius: "8px",
+                padding: "14px 28px",
 
-              <Route path="gallery" element={<Gallery />} />
+                backgroundColor: "#3b82f6",
+                color: "#ffffff",
 
-              <Route path="donate" element={<Donate />} />
+                fontFamily: "Arial, sans-serif",
+                fontSize: "16px",
+                fontWeight: 700,
 
-              <Route path="contact" element={<Contact />} />
-            </Route>
+                cursor: "pointer",
 
-            {/* Catch-all route for pages that don't exist */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </MaintenanceOverlay>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+                transition:
+                  "background-color 0.2s ease, transform 0.2s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "#2563eb";
+                e.currentTarget.style.transform = "translateY(-2px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "#3b82f6";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              Continue to Site
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
-export default App;
+export default MaintenanceOverlay;
