@@ -113,20 +113,20 @@ const Donate = () => {
             <CardContent className="space-y-6 pt-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Egg Tier: $150-$499</h4>
+                  <h4 className="font-bold text-foreground mb-2">Bronze Tier: $150-$499</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Brand name and logo on our team website</li>
                   </ul>
                 </div>
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Hatchling Tier: $500-$1,249</h4>
+                  <h4 className="font-bold text-foreground mb-2">Silver Tier: $500-$1,249</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Brand name and logo on our website</li>
                     <li>• Brand name on team T-Shirts and all other wearable merchandise</li>
                   </ul>
                 </div>
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Nestling Tier: $1,250-$1,999</h4>
+                  <h4 className="font-bold text-foreground mb-2">Gold Tier: $1,250-$1,999</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• All of the previous perks</li>
                     <li>• Social media recognition</li>
@@ -135,14 +135,14 @@ const Donate = () => {
                   </ul>
                 </div>
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Soaring Tier: $2,000-$2,499</h4>
+                  <h4 className="font-bold text-foreground mb-2">Diamond Tier: $2,000-$2,499</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• All of the previous perks</li>
                     <li>• Your company added as a key contributor on our engineering portfolio</li>
                   </ul>
                 </div>
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Predator Tier: $2,500-$4,999</h4>
+                  <h4 className="font-bold text-foreground mb-2">Red Diamond Tier: $2,500-$4,999</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• All of the previous perks</li>
                     <li>• Company merchandise will be distributed at competitions/events upon request</li>
@@ -150,7 +150,7 @@ const Donate = () => {
                   </ul>
                 </div>
                 <div className="border border-border/40 rounded-lg p-4">
-                  <h4 className="font-bold text-foreground mb-2">Zenith Tier: $5,000+</h4>
+                  <h4 className="font-bold text-foreground mb-2">Black Diamond Tier: $5,000+</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• All of the previous perks</li>
                     <li>• All eligible negotiated advertising methods</li>
