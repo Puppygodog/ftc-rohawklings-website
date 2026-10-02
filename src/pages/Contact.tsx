@@ -81,9 +81,8 @@ const Contact = () => {
                     <Label htmlFor="message">Message</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Tell us more..." 
-                      rows={5}
-                      required 
+                      placeholder="Tell us more... (Optional)" 
+                      rows={5} 
                       value={formData.message}
                       onChange={handleChange}
                     />
