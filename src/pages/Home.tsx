@@ -15,7 +15,7 @@ const Home = () => {
       <section 
         className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20"
         style={{
-          backgroundImage: `rgba(91,33,182,0.95)`,
+          backgroundImage: 'rgba(91,33,182,0.95)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
