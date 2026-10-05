@@ -15,7 +15,7 @@ const Home = () => {
       <section 
         className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(91, 33, 182, 0.95), rgba(91, 33, 182, 0.85), rgba(245, 158, 11, 0.75)), url(${heroBg})`,
+          backgroundImage: `rgba(91,33,182,0.95)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
