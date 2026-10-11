@@ -52,7 +52,7 @@ const Home = () => {
           
           {/* Logo - Centered above title */}
           <div className="flex justify-center mb-6 animate-fade-in">
-            <div className="inline-block p-4 rounded-full bg-gold/30 backdrop-blur-sm" style={{ boxShadow: '0 0 25px rgba(245, 158, 11, 0.6), 0 0 50px rgba(245, 158, 11, 0.4), 0 0 75px rgba(245, 158, 11, 0.2)' }}>
+           <div className="inline-block p-4 rounded-full bg-gold/30 backdrop-blur-sm border-4 border-[#F59E0B]">
               <img 
                 src={rohawkLogo} 
                 alt="Rohawklings Logo" 
