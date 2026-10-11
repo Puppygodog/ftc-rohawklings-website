@@ -46,7 +46,7 @@ const Home = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           {/* Teams Banner - Above Logo */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm mb-8 animate-fade-in font-bold border-3 border-[#F59E0B]" style={{ color: 'rgb(220, 200, 255)' }}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg text-sm mb-8 animate-fade-in font-bold border-4 border-[#F59E0B]" style={{ color: 'rgb(220, 200, 255)' }}>
             <span>Team 24661</span>
           </div>
           
