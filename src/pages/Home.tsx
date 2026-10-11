@@ -56,7 +56,7 @@ const Home = () => {
               <img 
                 src={rohawkLogo} 
                 alt="Rohawklings Logo" 
-                className="h-40 w-60 md:h-48 md:w-68"
+                className="h-40 w-70 md:h-48 md:w-78"
               />
             </div>
           </div>
