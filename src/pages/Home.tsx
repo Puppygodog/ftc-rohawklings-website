@@ -52,7 +52,7 @@ const Home = () => {
           
           {/* Logo - Centered above title */}
           <div className="flex justify-center mb-6 animate-fade-in">
-           <div className="inline-block p-4 rounded-full bg-gold/30 backdrop-blur-sm border-4 border-[#F59E0B]">
+           <div className="inline-block p-4 rounded-full bg-dark-purple/30 backdrop-blur-sm border-4 border-[#F59E0B]">
               <img 
                 src={rohawkLogo} 
                 alt="Rohawklings Logo" 
